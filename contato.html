@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fale Conosco | HighWay Tabacaria</title>
+  <meta name="description" content="Fale com a HighWay Tabacaria. Envie sua lista de itens e a gente orienta e separa." />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/contato.css" />
+  <link rel="icon" href="images/logo.png" />
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header compact">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="HighWay Tabacaria - Início">
+        <img class="brand-logo" src="images/logo.png" alt="Logo HighWay Tabacaria" />
+        <div class="brand-text">
+          <span class="brand-name">HighWay Tabacaria</span>
+          <span class="brand-tag">Contato</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" data-nav>
+          <li><a class="nav-link" href="index.html">Início</a></li>
+          <li><a class="nav-link" href="produtos.html">Produtos</a></li>
+          <li><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li><a class="nav-link active" href="contato.html">Fale Conosco</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="page">
+    <section class="page-head">
+      <div class="container page-head-inner">
+        <div>
+          <h1>Fale Conosco</h1>
+          <p class="muted">Mande sua lista de produtos e a gente responde rápido.</p>
+        </div>
+        <div class="notice">
+          <strong>18+:</strong> Venda proibida para menores.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="two-col">
+          <div class="card">
+            <h2>Envie uma mensagem</h2>
+            <p class="muted">Este formulário abre seu e-mail (sem backend). Você pode trocar pelos seus links reais.</p>
+
+            <form class="form" data-contact-form>
+              <div class="row">
+                <div class="field">
+                  <label for="nome">Nome</label>
+                  <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+                </div>
+                <div class="field">
+                  <label for="telefone">Telefone/WhatsApp</label>
+                  <input id="telefone" name="telefone" type="text" placeholder="(00) 00000-0000" />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="field">
+                  <label for="email">E-mail</label>
+                  <input id="email" name="email" type="email" placeholder="seu@email.com" required />
+                </div>
+                <div class="field">
+                  <label for="assunto">Assunto</label>
+                  <select id="assunto" name="assunto" required>
+                    <option value="">Selecione</option>
+                    <option>Orçamento / Lista de produtos</option>
+                    <option>Dúvida sobre produto</option>
+                    <option>Parceria / Fornecedor</option>
+                    <option>Outro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="6" placeholder="Ex.: 2 sedas king size + 1 piteira de vidro + 1 isqueiro maçarico..." required></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn primary" type="submit">Enviar</button>
+                <button class="btn ghost" type="reset">Limpar</button>
+              </div>
+
+              <div class="form-hint muted">
+                Dica: se você quiser, troque o e-mail e os links abaixo pelos seus contatos oficiais.
+              </div>
+            </form>
+          </div>
+
+          <div class="card">
+            <h2>Canais diretos</h2>
+            <p>Use os atalhos abaixo (substitua pelos seus links reais):</p>
+
+            <div class="contact-links">
+              <a class="contact-link" href="#" data-whats>
+                <span class="contact-ico">☎</span>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span class="muted">Clique para abrir</span>
+                </div>
+              </a>
+
+              <a class="contact-link" href="#" data-instagram>
+                <span class="contact-ico">◎</span>
+                <div>
+                  <strong>Instagram</strong>
+                  <span class="muted">Clique para abrir</span>
+                </div>
+              </a>
+
+              <a class="contact-link" href="mailto:contato@highwaytabacaria.com?subject=Contato%20-%20HighWay%20Tabacaria">
+                <span class="contact-ico">✉</span>
+                <div>
+                  <strong>E-mail</strong>
+                  <span class="muted">contato@highwaytabacaria.com</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="divider"></div>
+
+            <h3>Localização</h3>
+            <p class="muted">Rua Exemplo, 123 — Centro — Sua Cidade/UF</p>
+
+            <div class="map-fake" aria-label="Mapa ilustrativo">
+              <div class="map-pin"></div>
+              <span class="muted">Insira aqui um iframe do Google Maps, se desejar.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card soft">
+          <h2>Consumo responsável</h2>
+          <p class="muted">
+            Conteúdo e vendas destinados a maiores de 18 anos. Se for implementar e-commerce,
+            inclua mecanismos adequados de verificação de idade e compliance.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> HighWay Tabacaria.</span>
+      <span class="muted">Atendimento rápido e direto.</span>
+    </div>
+  </footer>
+
+  <script src="js/base.js"></script>
+<script src="js/contato.js"></script>
+
+</body>
+</html>

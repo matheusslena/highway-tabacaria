@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Produtos | HighWay Tabacaria</title>
+  <meta name="description" content="Catálogo HighWay Tabacaria: sedas, piteiras, tabacos, isqueiros, tesourinhas e acessórios. Filtre por categoria e encontre rápido." />
+  <link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/produtos.css" />
+
+  <link rel="icon" href="images/logo.png" />
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header compact">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="HighWay Tabacaria - Início">
+        <img class="brand-logo" src="images/logo.png" alt="Logo HighWay Tabacaria" />
+        <div class="brand-text">
+          <span class="brand-name">HighWay Tabacaria</span>
+          <span class="brand-tag">Catálogo</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" data-nav>
+          <li><a class="nav-link" href="index.html">Início</a></li>
+          <li><a class="nav-link active" href="produtos.html">Produtos</a></li>
+          <li><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li><a class="nav-link" href="contato.html">Fale Conosco</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="page">
+    <section class="page-head">
+      <div class="container page-head-inner">
+        <div>
+          <h1>Produtos</h1>
+          <p class="muted">Filtre por categoria, pesquise e encontre o que você precisa em segundos.</p>
+        </div>
+        <div class="notice">
+          <strong>18+:</strong> Venda proibida para menores.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <div class="field">
+            <label for="search">Buscar</label>
+            <input id="search" type="search" placeholder="Ex.: king size, vidro, maçarico..." data-search />
+          </div>
+
+          <div class="field">
+            <label for="category">Categoria</label>
+            <select id="category" data-category>
+              <option value="Todas">Todas</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="sort">Ordenar</label>
+            <select id="sort" data-sort>
+              <option value="relevancia">Relevância</option>
+              <option value="preco-asc">Preço: menor → maior</option>
+              <option value="preco-desc">Preço: maior → menor</option>
+              <option value="nome-asc">Nome: A → Z</option>
+            </select>
+          </div>
+
+          <button class="btn ghost filters-reset" type="button" data-reset>Limpar</button>
+        </div>
+
+        <div class="category-strip" id="categorias" data-category-strip aria-label="Atalhos de categoria"></div>
+
+        <div class="results-bar">
+          <div class="muted"><span data-count></span> itens encontrados</div>
+          <div class="muted">Dica: clique em um produto para ver detalhes</div>
+        </div>
+
+        <div class="grid products-grid" data-products></div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-copy">
+            <h2>Quer que a gente separe pra você?</h2>
+            <p>Envie a lista no Fale Conosco e a gente orienta o melhor custo-benefício.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn primary" href="contato.html">Falar com a loja</a>
+            <a class="btn ghost" href="index.html">Voltar ao início</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de produto -->
+  <div class="modal" data-modal aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-label="Detalhes do produto">
+      <button class="modal-close" type="button" data-modal-close aria-label="Fechar">×</button>
+      <div class="modal-body" data-modal-body></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> HighWay Tabacaria.</span>
+      <span class="muted">Venda proibida para menores de 18 anos.</span>
+    </div>
+  </footer>
+
+  <script src="js/base.js"></script>
+<script src="js/produtos.js"></script>
+
+</body>
+</html>

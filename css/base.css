@@ -24,15 +24,26 @@
 
 *{ box-sizing:border-box; }
 html,body{ height:100%; }
+
 body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  background: radial-gradient(1200px 600px at 15% 0%, rgba(226,90,44,.22), transparent 60%),
-              radial-gradient(900px 500px at 95% 10%, rgba(214,40,57,.18), transparent 60%),
-              linear-gradient(180deg, #060607, #0b0b0d 40%, #070708);
   color: var(--text);
   line-height: 1.5;
+
+  min-height: 100vh;
+
+  background:
+    radial-gradient(1200px 600px at 15% 0%, rgba(226,90,44,.22), transparent 60%),
+    radial-gradient(900px 500px at 95% 10%, rgba(214,40,57,.18), transparent 60%),
+    radial-gradient(900px 700px at 50% 95%, rgba(240,199,94,.08), transparent 60%),
+    linear-gradient(180deg, #060607 0%, #0b0b0d 40%, #070708 100%);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
 
 a{ color: inherit; text-decoration:none; }
 img{ max-width:100%; display:block; }
